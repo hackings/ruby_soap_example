@@ -39,7 +39,7 @@ begin
   puts zip_code.time_zone
   puts "-------------------"
 
-rescue LoadError => e
+rescue StandardError => e
   puts "install gem savon. 'gem install savon -v='0.9.7''"  
 end
 
